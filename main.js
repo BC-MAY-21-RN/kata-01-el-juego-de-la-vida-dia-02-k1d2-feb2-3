@@ -4,6 +4,8 @@ class Tablero {
         this.columnas = columnas;
     }
 }
+ 
 
 
+/* Commit inicial */
 const tablero = new Tablero(4, 8);
