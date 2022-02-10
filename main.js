@@ -16,10 +16,25 @@ class Tablero {
         for(let i = 0;i < tableroX.length; i++){
           
             /* llenamos las posiciones del tablero ahora con las filas respectivas */
-            tableroX[i] = new Array(this.filas).fill('*')
+            tableroX[i] = new Array(this.filas)/* .fill('*'); */
 
-            /* agregamos las celulas */
-            /* let nuevaCelular = new Celula() */
+            // console.log(tableroX[i]);
+            for(let j = 0; j < tableroX[i].length; j++) {
+                
+                /* Estado muerto = 0; vivo = 1*/
+               
+                let valor = Math.round(Math.random())
+                // console.log(valor)
+
+                tableroX[i][j] = valor;
+
+                /* agregamos las celulas */
+                /* let nuevaCelular = new Celula(fila = 2, columa = 3, 0) */
+            }   
+
+
+            // console.log(tableroX.join(" "));
+           
         }
         console.log(tableroX);
 

@@ -4,5 +4,11 @@ class Celula {
         this.columna = columna;
         this.estado = estado;
     }
+
+
 }
+
+
+
+
 
