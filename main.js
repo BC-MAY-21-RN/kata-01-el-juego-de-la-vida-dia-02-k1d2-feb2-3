@@ -1,11 +1,10 @@
+/* importar la clase celula */
+
 class Tablero {
     constructor(filas,columnas) {
         this.filas = filas;
         this.columnas = columnas;
-
-        
         this.creartablero();
-
     }
     
     creartablero() {
@@ -16,10 +15,11 @@ class Tablero {
         /* Aqui el ciclo */
         for(let i = 0;i < tableroX.length; i++){
           
-
+            /* llenamos las posiciones del tablero ahora con las filas respectivas */
             tableroX[i] = new Array(this.filas).fill('*')
 
-          
+            /* agregamos las celulas */
+            /* let nuevaCelular = new Celula() */
         }
         console.log(tableroX);
 
